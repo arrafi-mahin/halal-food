@@ -135,6 +135,7 @@
                 aria-label="Search"
               />
             </form>
+
             <!-- wishlist -->
             <div class="header-wishlist wishlist">
               <a href="#"><i class="fa-solid fa-heart"></i></a>
@@ -155,76 +156,118 @@
       </div>
     </div>
     <!-- page content -->
-    <section id="wishlist">
+    <section id="billing">
       <div class="container">
         <div class="row">
-          <h2 class="page-heading">
-            My wishlist
-          </h2>
+          <div class="page-heading d-flex justify-content-center">
+            <a class="step-1 " href="#">Shopping Cart</a>
+            <a class="step-1 active" href="#">Checkout details</a>
+            <a class="step-2 " href="#">Order Complete</a>
+          </div>
         </div>
-        <div class="row table">
-          <div class="col-12">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th class="text-center" scope="col">PRODUCT NAME</th>
-                  <th class="text-center" scope="col">UNIT PRICE</th>
-                  <th class="text-center" scope="col">STOCK STATUS</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="p-row d-flex align-items-center">
-                      <a href="#"><i class="fa-regular fa-2x fa-circle-xmark"></i></a>
-                      <div class="p-img mx-4">
-                        <img
-                          class="round"
-                          style="width: 50px"
-                          src="https://picsum.photos/200"
-                          alt="img"
-                        />
+        <div class="row">
+          <div class="col-12 col-md-7 p-0">
+            <div class="row table">
+              <div class="questions p-0">
+                <p class="mb-1">Returning customer? <a href="#">Click here to login</a></p>
+              <p class="mb-1">Have a coupon? <a href="#">Click here to enter your code</a></p>
+              </div>
+              <div class="col-12 billing-info">
+                <h5 class="billing-head">BILLING & SHIPPING</h5>
+                <form class="form">
+                  <!-- 2 column grid layout with text inputs for the first and last names -->
+                  <div class="col-12 col-md-6">
+                    <div class="row mb-2">
+                      <div class="col-12 pb-2">
+                        <div class="form-outline">
+                          <label class="form-label" for="form7Example1">Name</label>
+                          <input type="text" id="form7Example1" class="form-control" required/>
+                        </div>
                       </div>
-                      <div class="p-name">
-                        <h5 class="m-0">
-                          <a href="#">অর্গানিক আখের গুড় (১ কেজি)</a>
-                        </h5>
+                      <div class="col-12">
+                        <div class="form-outline">
+                          <label class="form-label" for="form7Example2">Address</label>
+                          <input type="text" id="form7Example2" class="form-control" />
+                        </div>
                       </div>
                     </div>
-                  </td>
-                  <td class="text-center"><span class=" text-muted">From: ৳<span class="tp-price">350.00</span></span></td>
-                  <td class="text-center"><span class="text-muted p-status">Out of Stock</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="row social">
-          <div class="col-12">
-            <div class="social-share d-flex">
-              <span>Share on: </span>
-              <div class="social-icons" >
-                <a href="#" target="_blank" data-label="Facebook" class="icon circle" title="Follow on Facebook" aria-label="Follow on Facebook">
-                  <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank" data-label="Instagram" class="icon circle" title="Follow on Instagram" aria-label="Follow on Instagram">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" data-label="Twitter" rel="noopener noreferrer nofollow" class="icon circle" title="Follow on Twitter" aria-label="Follow on Twitter">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-                <a href="#" data-label="E-mail"  class="icon  circle" title="Send us an email" aria-label="Send us an email">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="#" target="_blank" data-label="Phone"  class="icon circle" title="Call us" aria-label="Call us">
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-                <a href="#" target="_blank" data-label="YouTube" class="icon circle" title="Follow on YouTube" aria-label="Follow on YouTube">
-                  <i class="fa-brands fa-youtube"></i>
-                </a>
+                  </div>
+                  <!-- Text input -->
+                  <div class="form-outline mb-2">
+                    <label class="form-label" for="form7Example3">Towm / City</label>
+                    <input type="text" id="form7Example3" class="form-control" /> 
+                  </div>
+        
+                  <!-- Text input -->
+                  <div class="form-outline mb-2">
+                    <label class="form-label" for="form7Example4">Phone</label>
+                    <input type="tel" id="form7Example4" class="form-control" />
+                  </div>
+        
+                  <!-- Email input -->
+                  <div class="form-outline mb-2">
+                    <label class="form-label" for="form7Example5">Email address (optional)</label>
+                    <input type="email" id="form7Example5" class="form-control" />
+                  </div>
+        
+                  <!-- Number input -->
+                  <div class="form-outline mb-2">
+                    <label class="form-label" for="form7Example6">Account username</label>
+                    <input type="text" id="form7Example6" class="form-control" />
+                  </div>
+
+                  <div class="form-outline mb-2">
+                    <label class="form-label" for="form7Example6">Create account password</label>
+                    <input type="password" id="form7Example6" class="form-control" />
+                  </div>
+                  
+                  <div class="h4">ADDITIONAL INFORMATION</div>
+                  <P>Order Notes (Optional)</P>
+                  <!-- Message input -->
+                  <div class="form-outline mb-2">
+                    <textarea class="form-control" id="form7Example7" rows="4"></textarea>
+                  </div>
+                  </div>
+                </form>
               </div>
             </div>
-          </div>
+            <div class="col-12 col-md-5">
+              <div class="billing-sec">
+                <div class="bill-heading">your order</div>
+                <div class="bill-title d-flex justify-content-between">
+                  <div class="">PRODUCT</div>
+                  <div class="">SUBTOTAL</div>
+                </div>
+                <div class="bill-p-title d-flex justify-content-between">
+                  <div class="">৪ প্রকার মসলা কম্বো প্যাকেজ (২ কেজি)  × 1</div>
+                  <div class="">৳ <span class="total-bill">840.00</span></div>
+                </div>
+                <div class="bill-title d-flex justify-content-between">
+                  <div class="">Subtotal</div>
+                  <div class="">৳ <span class="total-bill">840.00</span></div>
+                </div>
+                <div class="shipping">Shipping</div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="shipping-area" id="exampleRadios1" value="inside" checked>
+                  <label class="form-check-label" for="inside">
+                    Inside Dhaka: ৳ 50.00
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="shipping-area" id="exampleRadios2" value="outside">
+                  <label class="form-check-label" for="outside">
+                    Outside Dhaka: ৳ 100.00
+                  </label>
+                </div>
+                <div class="bill-title bill-title-2 d-flex justify-content-between">
+                  <div class="">Total</div>
+                  <div class="">৳ <span class="total-bill">840.00</span></div>
+                </div>
+                <h5>Cash on delivery</h5>
+                <p>Pay with cash upon delivery</p>
+                <a class="process-btn" href="#">Place order</a>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -326,6 +369,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="./js/collapse.js"></script>
     <script src="./js/util.js"></script>
+    <script src="./js/script.js"></script>
 
   </body>
 </html>

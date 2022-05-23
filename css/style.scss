@@ -674,22 +674,7 @@
   .page-heading {
     font-weight: 700;
   }
-  i {
-    color: #858585;
-  }
-  i:hover {
-    color: #252525;
-  }
-  .p-name {
-    a {
-      text-decoration: none;
-      font-size: 14px;
-      color: #000000;
-    }
-    a:hover {
-      color: #f1b516;
-    }
-  }
+
   .social-icons {
     margin-left: 40px;
     :hover {
@@ -697,7 +682,7 @@
       color: #ffffff !important;
     }
     a {
-      color: #ffffff;
+      color: #8a8a8a;
       text-decoration: none;
     }
     .circle {
@@ -705,6 +690,176 @@
       border-radius: 20px;
       margin: 0 2px;
       padding: 5px;
+    }
+  }
+}
+// table
+.table i {
+  color: #858585;
+}
+i:hover {
+  color: #252525;
+}
+.p-name {
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000000;
+  }
+  a:hover {
+    color: #f1b516;
+  }
+}
+// cart
+#cart {
+  .btn {
+    background: #d3d3d3 !important;
+  }
+}
+.form-control {
+  // width: 20px !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+.cart-sec {
+  padding: 30px 15px;
+  .billing-sec {
+    padding-left: 30px;
+    border-left: 1px solid #d6d6d6;
+    .bill-heading {
+      padding: 8px 0 8px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #858585;
+      font-weight: 700;
+    }
+    .bill-title {
+      padding: 10px 0;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 10px;
+    }
+    .shipping {
+      padding: 10px 0;
+    }
+    .bill-title-2 {
+      border-top: 1px solid #d6d6d6;
+    }
+    .total-bill {
+      font-weight: 600;
+    }
+    .process-btn {
+      display: flex;
+      background: #000000 !important;
+      color: #ffffff !important;
+      justify-content: center;
+      padding: 8px 0;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .coupon-title {
+      padding: 30px 0;
+      font-weight: 700;
+      color: #585858;
+    }
+    form .process-btn {
+      margin-top: 20px;
+      background: #eeeeee !important;
+      color: #797979 !important;
+    }
+  }
+}
+/* Billing */
+.page-heading {
+  padding: 20px 15px 0;
+  a {
+    text-decoration: none;
+    color: #acacac;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 5px;
+  }
+  :hover {
+    color: #111111;
+  }
+  .step-1::after {
+    padding-left: 10px;
+    content: ">";
+  }
+  .active {
+    color: #111111 !important;
+  }
+}
+#billing {
+  p a {
+    text-decoration: none !important;
+    color: #000000 !important;
+  }
+  a:hover {
+    color: #b4870b !important;
+  }
+  .questions {
+    border-bottom: 2px solid #e0e0e0;
+  }
+  .billing-info {
+    padding-top: 15px;
+    padding-left: 0;
+  }
+  .billing-sec {
+    margin-top: 56px;
+    padding: 30px;
+    border: 2px solid #000000;
+    .bill-heading {
+      padding: 8px 0 8px;
+      text-transform: uppercase;
+      border-bottom: none !important;
+      font-weight: 700;
+    }
+    .bill-title {
+      padding: 10px 0;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 10px;
+      font-weight: bolder;
+    }
+    .bill-p-title {
+      padding: 10px 0;
+      border-bottom: 1px solid #d6d6d6;
+      margin-bottom: 10px;
+    }
+    .shipping {
+      padding: 10px 0;
+    }
+    .bill-title-2 {
+      border-top: 1px solid #d6d6d6;
+    }
+    .total-bill {
+      font-weight: 600;
+    }
+    .process-btn {
+      display: flex;
+      width: 150px;
+      background: #000000 !important;
+      color: #ffffff !important;
+      justify-content: center;
+      padding: 8px 0;
+    }
+    a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .coupon-title {
+      padding: 30px 0;
+      font-weight: 700;
+      color: #585858;
+    }
+    form .process-btn {
+      margin-top: 20px;
+      background: #eeeeee !important;
+      color: #797979 !important;
     }
   }
 }
